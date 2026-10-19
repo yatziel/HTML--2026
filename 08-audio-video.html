@@ -1,0 +1,48 @@
+<!-- 
+
+    Audio y Video
+
+    Estas etiquetas nos permiten insertar contenido multimedia.
+
+    <audio>...</audio>
+    <video>...</video>
+
+    Parámetros
+
+    - controls 👉 muestra los controles de las estiquetas
+    - autoplay 👉 reproduce automáticamente
+    - loop 👉 repite el cotenido en bucle
+    - muted 👉 no reproduce el audio
+
+    Elemento Source
+
+    Dentro de las etiquetas <audio> y <video> se define la etiqueta <source /> y a esta etiquete le pasamos el parámetro "src" que recibe como valor la ubicación del contenido.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔊 Audio y 📹 Video</title>
+</head>
+<body>
+
+    <h1>🔊 Audio y 📹 Video</h1>
+
+    <h2>Contenido de audio</h2>
+    <audio controls autoplay muted>
+        <source src="multimedia/maullidos.mp3" />
+        Tu navegador no es compatible con el contenido multimedia. Cambia a un navegador más moderno.
+    </audio>
+
+    <h2>Contenido de video</h2>
+    <video controls autoplay muted loop width="1024px" height="auto">
+        <source src="multimedia/gato.mp4" />
+        Tu navegador no es compatible con el contenido multimedia. Cambia a un navegador más moderno.
+    </video>
+
+</body>
+</html>
